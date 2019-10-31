@@ -7,7 +7,7 @@ const Card = ({ details }) => {
   const instructions = details.instructions
     .split('\n')
     .map(item => <li key={item}>{item}</li>)
-  
+  //ici si il ne trouve pas l image il met l image par défault
   const requireImage = chemin => {
       try {
           return require(`../img/${chemin}`)
